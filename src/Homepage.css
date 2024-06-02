@@ -1,0 +1,75 @@
+/* src/HomePage.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/public/bg_.png);
+  position: relative;
+  min-width: 1440px;
+  min-height: 915px;
+}
+
+.header {
+  text-align: center;
+  color: yellow;
+  margin-bottom: 50px;
+  width: 1071px;
+  height: 515px;
+  position: relative; /* Ensure relative positioning */
+}
+
+.header .logo-text {
+  margin-top: 47px;
+  font-family: 'Star Jedi';
+  font-size: 323px;
+  font-weight: 400;
+  position: relative; /* Set relative positioning for accurate placement of .logo-text2 */
+}
+
+.header .logo-text2 {
+  position: absolute; /* Ensure absolute positioning */
+  left: 75%; /* Center horizontally */
+  top: 100%; /* Position below the logo-text */
+  transform: translateX(-50%); /* Center alignment fix */
+  margin-top: 2px; /* Adjust spacing if needed */
+  font-family: 'Star Jedi';
+  font-size: 120px;
+  font-weight: 300;
+}
+
+.round {
+  width: 207px;
+  margin-top: 68px;
+  margin-left: 1120px;
+}
+
+.round .round_ {
+  font-family: 'Cascadia Code';
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52.81px;
+  text-align: center;
+  color: white;
+}
+
+.robot img {
+  width: 150px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+.input-container input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+/* src/Logo.css */
+
+.logo-container {
+    position: absolute;
+    width: 164px;
+height: 58px;
+top: 68px;
+left: 54px;
+gap: 0px;
+opacity: 0px;
+
+  }
+  
+  .logo-image {
+    height: 50px;
+    width: auto;
+  }
+  

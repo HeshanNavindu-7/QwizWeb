@@ -1,38 +1,25 @@
 .App {
   text-align: center;
+  width: 1440px;
+  height: 915px;
+  top: 663px;
+  left: -800px;
+  gap: 0px;
+  opacity: 0px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* src/App.css */
+
+@font-face {
+  font-family: 'Star Jedi';
+  src: local('Star Jedi'), url('/public/Starjhol.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: 'Star Jedi', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
