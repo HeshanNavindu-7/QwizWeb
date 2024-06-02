@@ -8,7 +8,7 @@ import Footer from '../../assets/Components/footer';
 const Home = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-screen text-yellow-400 "
+      className="-mt-10 flex flex-col items-center justify-center min-h-screen text-yellow-400 p-4"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: 'cover',
