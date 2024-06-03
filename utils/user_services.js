@@ -1,30 +1,24 @@
+// src/utils/user_services.js
 import { collection, getDocs, query, where } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "../src/firebase"; 
 
 const user = {
     async isUserSubmitted(userName) {
         try {
-            const resultRef = collection(db, "results")
-            const q = query(resultRef, where("userName", "==", userName))
-            const queryResult = await getDocs(q)
+            const resultRef = collection(db, "results");
+            const q = query(resultRef, where("userName", "==", userName));
+            const queryResult = await getDocs(q);
 
             queryResult.forEach((doc) => {
                 console.log(doc.id, " => ", doc.data());
-            })
+            });
 
-            if (queryResult.empty) {
-                return false
-            }
-
-            return true
-
+            return !queryResult.empty;
         } catch (error) {
-            console.log(error)
+            console.log(error);
+            return false;  // Added return false in case of error
         }
-
     }
-}
+};
 
-// user.isUserSubmitted("Denuwan")
-
-export default user
+export default user;
