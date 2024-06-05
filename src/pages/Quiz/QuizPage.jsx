@@ -77,7 +77,7 @@ const Quiz = () => {
         }
         setScore(newScore);
 
-        const resultsRef = collection(db, 'results');
+        const resultsRef = collection(db, 'quizzes');
         const querySnapshot = await getDocs(query(resultsRef, where('userName', '==', userName)));
 
         if (!querySnapshot.empty) {

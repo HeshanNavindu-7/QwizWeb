@@ -4,14 +4,15 @@ import { promises as fs } from 'fs';
 
 // Your Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDtRh1u_javbvFb1CoPq4199UYza3YyLzM",
-    authDomain: "quiz-d58b7.firebaseapp.com",
-    projectId: "quiz-d58b7",
-    storageBucket: "quiz-d58b7.appspot.com",
-    messagingSenderId: "195369048116",
-    appId: "1:195369048116:web:0cbcbe5911488b45fcd261",
-    measurementId: "G-WKZLDH3KDR"
-};
+    apiKey: "AIzaSyA8igK9VuRlH_gAYAnwwXvpAZdhddHepkk",
+    authDomain: "qwizweb.firebaseapp.com",
+    databaseURL: "https://qwizweb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "qwizweb",
+    storageBucket: "qwizweb.appspot.com",
+    messagingSenderId: "539498739510",
+    appId: "1:539498739510:web:c0c6e0f297b2d216572597",
+    measurementId: "G-ST8HHTNMTC"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
